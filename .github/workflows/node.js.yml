@@ -22,10 +22,6 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      working-directory: ./dashboard/api
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
+      working-directory: ./dashboard/api  
     - run: npm install
     - run: npm run build 
