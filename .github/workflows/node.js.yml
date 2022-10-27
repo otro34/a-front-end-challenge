@@ -21,7 +21,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Build API
       working-directory: ./dashboard/api  
-      run: npm install
-           npm run build 
+      run: npm install && npm run build 
+    - name: Build UI
+      working-directory: ./dashboard/dashboard-ui  
+      run: npm install && npm run build 
+           
