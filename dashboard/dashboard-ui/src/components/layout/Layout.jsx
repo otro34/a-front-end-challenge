@@ -18,6 +18,11 @@ const Layout = ({ toolbar, content}) => {
     )
 }
 
+Layout.defaultProps = {
+    toolbar: <></>,
+    content: <></>
+}
+
 Layout.propTypes = {
     toolbar: PropTypes.node,
     content: PropTypes.node

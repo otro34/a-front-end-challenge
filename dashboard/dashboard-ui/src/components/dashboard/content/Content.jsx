@@ -6,7 +6,7 @@ import { Grid } from '@material-ui/core'
 import Card from './card'
 
 const Content = ({ courses }) => {
-    
+    /* eslint-disable */
 return (
     <Grid container spacing={2}> { courses && courses.map(course => {
 

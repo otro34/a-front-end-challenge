@@ -10,6 +10,8 @@
 // To learn more about the benefits of this model and instructions on how to
 // opt-in, read https://bit.ly/CRA-PWA
 
+  /* eslint-disable no-console, no-control-regex */
+
 const isLocalhost = Boolean(
   window.location.hostname === 'localhost' ||
     // [::1] is the IPv6 localhost address.
@@ -36,6 +38,7 @@ export function register(config) {
 
       if (isLocalhost) {
         // This is running on localhost. Let's check if a service worker still exists or not.
+        /* eslint-disable */
         checkValidServiceWorker(swUrl, config);
 
         // Add some additional logging to localhost, pointing developers to the
@@ -48,6 +51,7 @@ export function register(config) {
         });
       } else {
         // Is not localhost. Just register service worker
+        /* eslint-disable no-console, no-control-regex */
         registerValidSW(swUrl, config);
       }
     });
@@ -55,6 +59,7 @@ export function register(config) {
 }
 
 function registerValidSW(swUrl, config) {
+    /* eslint-disable no-console, no-control-regex */
   navigator.serviceWorker
     .register(swUrl)
     .then(registration => {
