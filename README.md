@@ -2,6 +2,8 @@
   A front-end challenge (with a backend)
 </h1>
 
+[![Node.js CI](https://github.com/otro34/a-front-end-challenge/actions/workflows/node.js.yml/badge.svg)](https://github.com/otro34/a-front-end-challenge/actions/workflows/node.js.yml)
+
 ## Solution Requirements
 - Node Js
 - Vs Code (ESLint plugin is a must, and whatever helps you develop with Javascript and React, like prettier)
