@@ -9,6 +9,10 @@ app.use(function(req, res, next) {
     next();
   });
 
+app.get("/", (req, res, next) => {
+    return res.json({ result: "OK" });
+   });
+
 app.get("/courseTypes", (req, res, next) => {
     const response = courseTypes.find()
     return res.json(response);
