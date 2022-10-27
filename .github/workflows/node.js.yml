@@ -20,17 +20,12 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - run: cd /dashboard/api/
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
+      working-directory: ./dashboard/api
+    - uses: actions/setup-node@v3
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: cd /dashboard/api/
     - run: npm install
     - run: npm run build 
-    - run: cd ..
-    - run: cd /dashboard-ui/
-    - run: npm install
-    - run: npm run build
