@@ -14,7 +14,8 @@
   },
   "scripts": {
     "test": "test",
-    "start": "node start.js"
+    "start": "node start.js",
+    "build": ""
   },
   "keywords": [
     "dashboard",
