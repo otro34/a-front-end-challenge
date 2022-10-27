@@ -26,5 +26,5 @@ jobs:
       run: npm install && npm run build 
     - name: Build UI
       working-directory: ./dashboard/dashboard-ui  
-      run: npm install && npm run build 
+      run: npm install --legacy-peer-deps && npm run build 
            
